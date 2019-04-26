@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/c,java,python
-# Edit at https://www.gitignore.io/?templates=c,java,python
+# Created by https://www.gitignore.io/api/c,java,flex,python
+# Edit at https://www.gitignore.io/?templates=c,java,flex,python
 
 ### C ###
 # Prerequisites
@@ -55,6 +55,29 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+### Flex ###
+
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+.actionScriptProperties
+
+# only for a non-library project
+.flexProperties
+
+# only for library project
+.flexLibProperties
+
+
+# Other files and folders
+.settings/
+.project/
+
+.FlexUnitSettings
+.externalToolBuilders
+.model
 
 ### Java ###
 # Compiled class file
@@ -204,4 +227,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# End of https://www.gitignore.io/api/c,java,python
+# End of https://www.gitignore.io/api/c,java,flex,python
