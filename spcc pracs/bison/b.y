@@ -23,6 +23,7 @@ int yyerror()
 }
 /*
 
+lex b.l 
 yaac -d b.y
 gcc lex.yy.c y.tab.c -ll 
 ./a.out 
