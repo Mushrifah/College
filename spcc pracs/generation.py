@@ -1,5 +1,5 @@
-infixexp = "a*b*c/d-e/f"
-#infixexp = "a*b*c/d-e/f*g+h"
+#infixexp = "a*b*c/d-e/f"
+infixexp = "a*b*c/d-e/f*g+h"
 pointer = 0
 replace = ["Z","Y","X","W","V","U","T","S","R","Q","P"]
 l2=len(infixexp)
