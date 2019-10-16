@@ -22,6 +22,12 @@ int yyerror()
  	printf("Invalid\n");
 }
 /*
+
+lex b.l 
+yaac -d b.y
+gcc lex.yy.c y.tab.c -ll 
+./a.out 
+
 ryms@ryms-ThinkCentre-M72e:~/Desktop$ ./a.out
 program to recognize valid
 husain123
