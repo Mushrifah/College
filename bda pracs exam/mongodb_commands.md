@@ -28,5 +28,21 @@ outputs as:- `{ "_id" : ObjectId("5db69bc52fd13dd46932d5c5"), "id" : 1, "prjname
   7.3 id doesn't exists in collection so it gets added<br>
   `db.project.insert({_id:1,prjname:"cmf",pdomain:"web"})`<br>
   outputs as:- `{"_id":1,"prjname":"cmf","pdomain":"web"}`<br>
-8. 
-  
+8. Types of Update operations<br>
+  8.1 upsert(true) and _id matches so it will update the result<br> 
+  ` db.project.update({_id:2},{$set:{prjname:"xyz"}},{upsert:true})`<br>
+  8.2 upsert(true) and _id does not match so it will insert a new value<br>
+  `db.project.update({_id:3},{$set:{prjname:"xyz"}},{upsert:true})`<br>
+  8.3 upsert(false) and no _id matches so no change i.e. no updation happens<br>
+  `db.project.update({_id:4},{$set:{prjname:"xyz"}})` <br>
+  8.4 upsert(false) and _id matches so updation happens<br>
+  `db.project.update({_id:3},{$set:{prjname:"abc"}})`<br>
+  8.5 To update multiple rows we use multi(true) i.e. it checks wherever match is found and updates those<br>
+  `db.project.update({id:2},{$set:{prjname:"abc"}},{multi:true})`<br>
+  8.6 multi(false) will update the first occured value only and not all<br>
+  ` db.project.update({id:2},{$set:{prjname:"xyz"}},{multi:false})`<br>
+9. Remove command<br>
+  9.1 Remove with condition<br>
+  `db.project.remove({"id":1})`<br>
+  9.2 Without condition<br>
+  `db.project.remove({})`<br>
