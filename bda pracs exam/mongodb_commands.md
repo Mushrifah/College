@@ -46,3 +46,22 @@ outputs as:- `{ "_id" : ObjectId("5db69bc52fd13dd46932d5c5"), "id" : 1, "prjname
   `db.project.remove({"id":1})`<br>
   9.2 Without condition<br>
   `db.project.remove({})`<br>
+10. Types of save commands<br>
+  10.1 Having _id in collection so it will update<br>
+  `db.project.save({_id:3,prjname:"xyz"})`<br>
+  10.2 _id not there in collection so it inserts one of it own<br>
+  `db.project.save({prjname:"pqr"})`<br>
+  10.3 _id not present in collection so we insert the values<br>
+  `db.project.save({_id:"5",prjname:"pqr"})`<br>
+10. 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
