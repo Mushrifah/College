@@ -18,5 +18,5 @@ To first start using hadoop on ubuntu type the following commands as shown below
 9. `$hdfs dfs -count /mush` is used to count no. of dirs, files or bytes in hdfs<br>
 10. `$hdfs dfs -cp /src /dest` is used to copy files within hdfs<br>
 11. `$hdfs dfs -rm /path`  is used to remove file from hdfs <br>
-12. `$hdfs dfs -rmdir /path` is used to remove dir from hdfs  <br>
+12. `$hdfs dfs -rm -r /path` is used to remove dir from hdfs  <br>
 13. `$hdfs dfs -mv /src /dest` is used to move files within hdfs <br>
