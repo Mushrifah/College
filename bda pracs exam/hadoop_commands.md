@@ -20,3 +20,5 @@ To first start using hadoop on ubuntu type the following commands as shown below
 11. `$hdfs dfs -rm /path`  is used to remove file from hdfs <br>
 12. `$hdfs dfs -rm -r /path` is used to remove dir from hdfs  <br>
 13. `$hdfs dfs -mv /src /dest` is used to move files within hdfs <br>
+
+Note: If permission denied then do `chmod 777 /folder_name`
