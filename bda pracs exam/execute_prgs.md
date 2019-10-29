@@ -1,9 +1,8 @@
-# steps to execute hadoop programs
 ## Directly get the program by using:
 1. For largest: `curl -o mm.java https://transfer.sh/PHgkP/Mainmapper.java`
 2. For wordcount: `curl -o wct.java https://transfer.sh/4q8Fi/wordcount.java`
 
-
+# steps to execute hadoop programs
 1. `su -root` <br>
 2. `export CLASSPATH='hadoop classpath'`<br>
 3. Make a directory with wordcount and in it there are 3 folders input- data, class-executed file and wordcount.java file<br>
